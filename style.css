@@ -1,0 +1,29 @@
+body{
+   background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)) ,url(pic2.jpg);
+   background-size: cover;
+   background-position: center;
+}
+
+.login-box{
+    width: 700px;
+    float: none;
+    margin: 150px;
+}
+
+.login-right{
+    background: #ff0000;
+    padding: 30px;
+}
+
+.login-left{
+    background: #ffa500;
+    padding: 30px;
+}
+
+.form-control{
+    background-color: transparent !important;
+}
+h3{
+    align-content: center;
+    margin-left: 300px;
+}
