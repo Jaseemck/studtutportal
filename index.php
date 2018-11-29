@@ -6,7 +6,7 @@ include('loginback.php');
 
 <html>
     <head>
-        <title>LOGIN</title>
+        <title>NSSCE PORTAL</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     </head>

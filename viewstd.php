@@ -2,7 +2,7 @@
 include('loginback.php');
 //session_start ();
 
-if (! (isset ( $_SESSION ['student'] ))) {
+if (! (isset ( $_SESSION ['tutor'] ))) {
 	
 	header ( 'location: index.php' );
 }
@@ -36,7 +36,7 @@ if (! (isset ( $_SESSION ['student'] ))) {
 
         <!-- Navigation -->
       
-     <?php include('studleftbar.php')?>;
+     <?php include('tutleftbar.php')?>;
 
            
          <nav>
@@ -44,7 +44,7 @@ if (! (isset ( $_SESSION ['student'] ))) {
         
             <div class="row">
                 <div class="col-lg-12">
-                   <h4 class="page-header"> <?php echo strtoupper("welcome"." ".htmlentities($_SESSION['student']));?></h4>
+                   <h4 class="page-header"> <?php echo strtoupper("welcome"." ".htmlentities($_SESSION['tutor']));?></h4>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -53,7 +53,7 @@ if (! (isset ( $_SESSION ['student'] ))) {
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            View Activity Points
+                            View students
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -61,8 +61,7 @@ if (! (isset ( $_SESSION ['student'] ))) {
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>Event</th>
-                                            <th>proof</th>
+                                            <th>Student Name</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -70,13 +69,12 @@ if (! (isset ( $_SESSION ['student'] ))) {
                                     <?php 
                                     $sn=0;
                                     $sem=$_SESSION['semester'];
-                                    $sql = "(SELECT sender,ann,date FROM announcement where semester=$sem)";
+                                    $sql = "SELECT studname FROM std_login where semester=$sem";
                                     $result = $db->query($sql);
                                     while($res=$result->fetch_object()){?>	
                                         <tr class="odd gradeX">
-                                            <td><?php echo htmlentities( strtoupper($res->sender));?></td>
-                                            <td><?php echo htmlentities( strtoupper($res->ann));?></td>
-                                            <td><?php echo htmlentities( strtoupper($res->date));?></td>
+                                            <td><?php echo htmlentities( strtoupper($res->studname));?></td>
+                                            
                                         </tr>
                                         
                                     <?php $sn++;}?>   	           

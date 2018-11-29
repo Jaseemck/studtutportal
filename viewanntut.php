@@ -2,7 +2,7 @@
 include('loginback.php');
 //session_start ();
 
-if (! (isset ( $_SESSION ['student'] ))) {
+if (! (isset ( $_SESSION ['tutor'] ))) {
 	
 	header ( 'location: index.php' );
 }
@@ -36,7 +36,7 @@ if (! (isset ( $_SESSION ['student'] ))) {
 
         <!-- Navigation -->
       
-     <?php include('studleftbar.php')?>;
+     <?php include('tutleftbar.php')?>;
 
            
          <nav>
@@ -44,7 +44,7 @@ if (! (isset ( $_SESSION ['student'] ))) {
         
             <div class="row">
                 <div class="col-lg-12">
-                   <h4 class="page-header"> <?php echo strtoupper("welcome"." ".htmlentities($_SESSION['student']));?></h4>
+                   <h4 class="page-header"> <?php echo strtoupper("welcome"." ".htmlentities($_SESSION['tutor']));?></h4>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>

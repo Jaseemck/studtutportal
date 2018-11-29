@@ -27,12 +27,14 @@
                                     <a href="announce.php">Create Announcement</a>
                                 </li>
                                 <li>
-                                    <a href="viewann.php">View Announcement</a>
+                                    <a href="viewanntut.php">View Announcement</a>
                                 </li>
                             </ul>
                            
                         </li>
-                                            
+                        <li>
+                            <a href="viewstd.php"><i class="fa fa-bar-chart-o fa-fw"></i>View students<span class="fa arrow"></span></a>
+                        </li>                         
                    <li>
                             <a href="viewact.php"><i class="fa fa-bar-chart-o fa-fw"></i>View Activity points<span class="fa arrow"></span></a>
                   </li>    

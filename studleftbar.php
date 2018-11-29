@@ -36,7 +36,10 @@
                                             
                    <li>
                             <a href="viewtut.php"><i class="fa fa-bar-chart-o fa-fw"></i>View Tutor<span class="fa arrow"></span></a>
-                  </li> 
+                  </li>
+                  <li>
+                            <a href="viewann.php"><i class="fa fa-bar-chart-o fa-fw"></i>View Announcement<span class="fa arrow"></span></a>
+                  </li>  
                 <li>
                 <?php if (isset($_SESSION["student"])): ?>
 		        <a href="studdashboard.php?studlogout='1'"><i class="fa fa-bar-chart-o fa-fw"></i>Logout</a>

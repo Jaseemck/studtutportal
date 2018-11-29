@@ -53,7 +53,7 @@ if (! (isset ( $_SESSION ['student'] ))) {
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            View Course
+                            View Courses
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">

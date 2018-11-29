@@ -16,7 +16,7 @@ if (isset($_POST['addact'])){
     $student=$_SESSION ['student'];
     $event = $_POST['event'];
     $proof = $_POST['proof'];
-    $date = date('d-m-Y');
+    $date = date('y-m-d');
     
 $sql = "INSERT INTO activitypoints (event, proof, semester, date, studname) VALUES ('$event', '$proof', '$semester', '$date', '$student')";
 mysqli_query($db, $sql);
